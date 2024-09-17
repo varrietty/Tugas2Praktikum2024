@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TampilData extends StatelessWidget {
   final String nama;
@@ -17,13 +18,40 @@ class TampilData extends StatelessWidget {
     final int umur = DateTime.now().year - tahun;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.purple.shade300,
         title: const Text("Perkenalan"),
       ),
-      body: Container(
-        margin: const EdgeInsets.all(10),
+      body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Nama saya $nama, NIM $nim, dan umur saya adalah $umur tahun"),
+            const SizedBox(height: 20),
+            Text(
+              "Nama : $nama",
+              style: GoogleFonts.poppins(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              "NIM : $nim",
+              style: GoogleFonts.poppins(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              "Umur : $umur tahun",
+              style: GoogleFonts.poppins(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
           ],
         ),
       ),
