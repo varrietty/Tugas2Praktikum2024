@@ -91,6 +91,6 @@ Widget build(BuildContext context) {
 ## Screenshot :
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="assets/img/inputdata.png" alt="Form Input Data" style="width: 49%;">
-  <img src="assets/img/perkenalan.png" alt="Tampilan Perkenalan" style="width: 49%;">
+  <img src="assets/img/inputdata.png" alt="Form Input Data" style="width: 39%;">
+  <img src="assets/img/perkenalan.png" alt="Tampilan Perkenalan" style="width: 39%;">
 </div>
